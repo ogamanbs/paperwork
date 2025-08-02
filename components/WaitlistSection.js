@@ -30,8 +30,8 @@ const WaitlistSection = () => {
     }
     
     try {
-      const response = await axios.post('http://localhost:8000/users', user);
       // const response = await axios.post('http://localhost:8000/users', user);
+      const response = await axios.post('https://paperwork-server.vercel.app/users', user);
       if(response) {
         const data = response.data;
         if(data) {
